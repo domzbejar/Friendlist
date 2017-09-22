@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router';
+import {
+  BrowserRouter,
+  Route,
+  Link,
+  Switch
+} from 'react-router-dom';
 
 
 class About extends Component {
    
     
     render(){
-        
-            console.log(this.props.profiledata);
         return(
             <div>
                 <h1>About wrewrww</h1>

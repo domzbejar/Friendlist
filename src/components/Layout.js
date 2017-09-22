@@ -119,6 +119,13 @@ class Layout extends Component {
         //console.log(data);
     }
     
+    
+    ViewProfile(e){
+        //e.preventDefault();
+        //var data = this.props.profiledata;
+        //let id = this.props.profileId;
+        console.log(this.props.match.params.profileId);
+    }
    
     
     componentWillMount(){
@@ -131,6 +138,7 @@ class Layout extends Component {
         })
         
     }
+    
     componentDidMount(){
         
         
@@ -145,7 +153,7 @@ class Layout extends Component {
             <Header />
             <SearchBar />
             <Form ref="laymeform" addfriend={this.AddFriend.bind(this)} /> 
-            <FriendsList data={this.state.newData} removedata={this.RemoveData.bind(this)}/>
+            <FriendsList data={this.state.newData} removedata={this.RemoveData.bind(this)} viewdata={this.ViewProfile.bind(this)}  />
             </div>
             <Footer />
             </div>

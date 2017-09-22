@@ -1,19 +1,27 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router';
+import {
+  BrowserRouter,
+  Route,
+  Link,
+  Switch
+} from 'react-router-dom';
+import Layout from './Layout';
+import FriendsList from './FriendsList';
+
+var divStyle = {
+    color : "#fff",
+    fontSize: "2em",
+}
 
 
 class Profile extends Component {
-   
-    
-    render(){
+    constructor(props){
+        super(props)
         
-       
-        return(
-            <div>
-                <h1>PROFILE</h1>
-            </div>
-        );
     }
+   render(){
+    return <h1>Hello {this.props.match.params.profileId}!</h1>
+   }
 }
 
 export default Profile;

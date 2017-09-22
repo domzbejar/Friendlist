@@ -1,14 +1,22 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router'
+import {
+  BrowserRouter,
+  Route,
+  Link,
+  Switch
+} from 'react-router-dom';
+
+
+
 //import $ from 'jquery';
 
 class FriendsList extends Component{
     render(){
             var friendlist = this.props.data.map((data,i)=>{
                 return(
-                    <div  className="pod-container" key={i}>
+                    <div  className="pod-container" key={i} >
                         <div className="pod">
-                            <Link to="about" ><button id={data.id} className="pod-button view">view</button></Link>
+                            <Link to="/profile" params={{profileId : "hjkhk"}}  ><button className="pod-button view">view</button></Link>
                             <button className="pod-button edit">edit</button>
                             <button id={data.id} onClick={this.props.removedata} className="pod-button delete">remove</button>
                         </div>

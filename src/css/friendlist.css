@@ -126,7 +126,7 @@ footer{
 }
 
 .pod-button{
-    z-index: 1; position: absolute; cursor: pointer;padding: 0px; margin: 0px; border: none !important;
+    z-index: 4; position: absolute; cursor: pointer;padding: 0px; margin: 0px; border: none !important; display: block;
 }
 .pod-button:hover{
     filter: brightness(1.2);border: none !important;
