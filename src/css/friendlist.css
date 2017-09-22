@@ -1,0 +1,219 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+html{
+  
+}
+html,body,.App{
+    height: 100%;
+}
+body{
+    background: url('../img/bg.png') no-repeat; background-size: cover; background-attachment: fixed; background-position: center top;
+}
+img{
+    width: 100%
+}
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -218px;
+}
+.wrapper:after{
+    display: block;
+    content: "";
+    height: 218px;
+}
+.container{
+    max-width:750px; width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background: #e8e8e8; padding: 0em .5em;
+}
+.search-section{
+    background: #6d518c; height: 40px; width: 100%; display: block;
+}
+footer{
+    /*background: url('../img/moon.png') no-repeat; */background-position:  top center;
+    height: 218px;display: block; margin: 0 auto;overflow: hidden;position: relative; width: 100%;
+}
+
+
+
+/*3 column Grid*/
+.row{
+    /*margin-top: 5px;
+    margin-bottom: 10px;*/
+    width: 100%;
+    margin: 0 auto; display: block;
+    padding: 5px 0px 10px;color: #fff;
+}
+.row:after{
+    clear: both; float: none;content: "";display: block;
+}
+.row div{
+    transition: .8s ease;
+    -webkit-transition: .8s ease;
+}
+.row .column1{
+    position: relative;
+    float: left;
+    max-width: 30%;
+    width: 100%;
+    margin-left: 1.666666666666667%;
+    margin-right: 1.666666666666667%;
+    margin-bottom: 10px;
+    display: block;
+}
+.row .column2{
+    position: relative;
+    float: left;
+    width: 63.33333333333333%;
+    margin-left: 1.666666666666667%;
+    margin-right: 1.666666666666667%;
+    margin-bottom: 10px;
+    display: block;
+}
+.row .column3{
+    position: relative;
+    width: 96.66666666666667%;
+    margin-left: 1.666666666666667%;
+    margin-right: 1.666666666666667%;
+    margin-bottom: 10px;
+    display: block;
+}
+.row .push1{
+    margin-left: 35%;
+}
+.row .push2{
+    margin-left: 68.33333333333333%;
+}
+
+
+/*------------------------------*/
+
+.moon-container{
+    position: absolute;left: 0px; right: 0px; margin: 0 auto;
+    width: 882px;height: 891px;padding: 0px; display: block;
+}
+#fullmoon{
+    animation: rotate 60s linear 0s normal infinite both; position: absolute; left: 0; right: 0; width: 882px; display: block; margin: 0 auto;filter: drop-shadow( 0px 0px 10px rgba(118,205,255,.6)  );
+}
+
+.pod-container{
+    float: left;
+    max-width: 30%;
+    width: 100%;
+    margin-left: 1.666666666666667%;
+    margin-right: 1.666666666666667%;
+    margin-bottom: 2em;
+    display: block;
+    transition: .8s ease;
+    -webkit-transition: .8s ease;
+}
+.pod-container h3{
+    font-family: 'Play', sans-serif; font-weight: 700; color: #6d518c; margin: .4em auto; font-size: 1em; text-align: center;
+}
+.pod-container h3 span{
+    font-weight: 400; color: #aecfd6; font-size: .8em;
+}
+.pod{
+    background: url('../img/pod.png') no-repeat;
+    position: relative; margin: 0 auto;display: block;
+    max-width: 225px; width: 100%;padding-top: 224px;
+    filter: drop-shadow( 0px 0px 7px rgba(179,119,255,1)  );
+}
+.pod .pod-img{
+    position: relative;top: 0px; display: block; margin: auto; left: 0; right: 0; height: auto;
+}
+
+.pod-button{
+    z-index: 1; position: absolute; cursor: pointer;padding: 0px; margin: 0px; border: none !important;
+}
+.pod-button:hover{
+    filter: brightness(1.2);border: none !important;
+}
+.pod-button:active,.pod-button:target,.pod-button:focus{
+    -webkit-box-shadow: none;box-shadow: none;outline: none;
+}
+
+.delete{
+    background: url('../img/delete-icon.png') no-repeat; height: 40px; width: 40px;display: block;  border: none; text-indent: -9999px;
+    left: 150px; top: 155px;
+}
+.edit{
+    background: url('../img/edit-icon.png') no-repeat; height: 40px; width: 40px;display: block; border: none; text-indent: -9999px;
+    left:93px; top: 173px;
+}
+.view{
+    background: url('../img/view-icon.png') no-repeat; height: 40px; width: 40px;display: block;  border: none; text-indent: -9999px;
+    left:33px; top: 155px;
+}
+
+
+
+
+/*form*/
+.form-container{
+    background-color: rgba(177,177,177,0.1); display: block; margin-bottom: 10px;
+}
+.friend-form{ padding: 1em 0em 0em; width: 100%;}
+.friend-form input::placeholder{
+    color: #bbb;
+}
+.friend-form input[type="text"],.friend-form select{
+    width: 100%; border-radius: 5px; margin: 0 auto; display: block; text-indent: .5em; padding: .5em 0;
+}
+.friend-form button{
+    background: #ff8706; margin: 0px auto; padding: .4em 1em; max-width: 320px; width: 100%; display: block; border: none; border-radius: 5px; font-size: 1.5em; font-family: 'Play', sans-serif; font-weight: 700;
+    text-transform: uppercase; color: #783e00; text-shadow: rgba(255,180,0,1) 0px 0px 5px; cursor:pointer;
+}
+.friend-form button:hover,
+.friend-form button:active{
+    background: #ffa406;
+}
+
+
+
+
+@media only screen and (max-width: 768px)and (min-width: 520px){ /*Tablet*/
+    /*3 column Grid*/
+    .pod-container{
+        max-width: 45%; margin-left: 2.5%; margin-right: 2.5%;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){ /*Tablet*/
+    /*3 column Grid*/
+    .friend-form input[type="text"],.friend-form select,.row{
+     width: 95%;
+    }
+    .row .column1,.row .column2,.row .column3{
+        max-width: 768px; width: 100%; margin: 0 auto 10px; display: block; float: none;
+    }
+    .row .push1,.row .push1{
+        margin-left: 0%;
+    }
+    
+}
+@media only screen and (max-width: /*425px*/ 520px){
+    .pod-container{
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 320px){
+    
+}
+
+@keyframes rotate {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+
+
+
+
