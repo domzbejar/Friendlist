@@ -1,11 +1,9 @@
 import React from 'react';
-
 import ReactDOM from 'react-dom';
 import './css/friendlist.css';
 import './js/myJs.js';
 import Layout from './components/Layout';
 
-//import {Router, Route, IndexRoute, hashHistory,IndexRedirect} from 'react-router';
 import About from './components/About';
 import Profile from './components/Profile';
 import Navigation from './components/Navigation';

@@ -18,9 +18,9 @@ import {
 
 const Me = () => (
     <div>
-    <Nav />
+
     <Switch>
-        <Route exact path="/layout" component={Layout} />
+        <Route exact path="/" component={Layout} />
         <Route exact path="/about" component={About}/>
         <Route path="/profile" component={Profile}/>
     </Switch>
